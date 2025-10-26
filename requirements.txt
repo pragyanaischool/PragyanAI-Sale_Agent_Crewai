@@ -1,0 +1,29 @@
+#--- Core Frameworks ---
+streamlit
+crewai
+crewai-tools
+#--- API Key Management ---
+python-dotenv
+numpy
+pandas
+#--- LLM Providers ---
+groq
+groq-sdk
+#--- RAG & VectorDB Libraries ---
+#For MongoDB Atlas Vector Search
+pymongo
+langchain
+langchain-core
+langchain-mongodb
+
+#For text splitting
+langchain-community
+#--- Document Handling ---
+#pypdf is for reading PDFs.
+pypdf
+#python-docx is for reading .docx files
+python-docx
+#--- Embedding Model ---
+#Use HuggingFace local embeddings
+langchain-huggingface
+sentence-transformers
