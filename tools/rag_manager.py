@@ -6,7 +6,6 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_mongodb import MongoDBAtlasVectorSearch
 # Updated import: Removed BaseTool, added create_retriever_tool
 from langchain.tools import Tool, create_retriever_tool
-
 from typing import Any
 
 # Import your local tool
