@@ -1,10 +1,10 @@
-import pypdf  # Changed from PyPDF2
+import pypdf
 import docx
 from typing import Type
 from pydantic import BaseModel, Field
 
-# Corrected import: BaseTool is now in 'crewai'
-from crewai import BaseTool
+# Corrected import: BaseTool is now in 'crewai_tools'
+from crewai_tools import BaseTool
 
 # --- 1. Define Input Schema ---
 # This tells the agent *how* to use the tool.
@@ -27,7 +27,7 @@ class DocumentReaderTool(BaseTool):
             if file_path.endswith(".pdf"):
                 # Handle PDF files
                 with open(file_path, "rb") as f:
-                    reader = pypdf.PdfReader(f)  # Changed from PyPDF2.PdfReader
+                    reader = pypdf.PdfReader(f)
                     for page in reader.pages:
                         text += page.extract_text() or ""
                 if not text:
@@ -50,4 +50,5 @@ class DocumentReaderTool(BaseTool):
             return f"Error: File not found at path: {file_path}"
         except Exception as e:
             return f"Error reading file: {e}"
+
 
