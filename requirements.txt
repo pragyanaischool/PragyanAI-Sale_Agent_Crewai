@@ -8,7 +8,7 @@ numpy
 pandas
 #--- LLM Providers ---
 groq
-groq-sdk
+#groq-sdk
 #--- RAG & VectorDB Libraries ---
 #For MongoDB Atlas Vector Search
 pymongo
