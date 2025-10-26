@@ -1,10 +1,7 @@
 #--- Core Frameworks ---
 streamlit
-#crewai==0.98.0
-#crewai-tools==0.32.1
-crewai==0.51.0 
-crewai_tools==0.28.0 
-patronus==0.3.0
+crewai==0.98.0
+crewai-tools==0.32.1
 #--- API Key Management ---
 python-dotenv
 numpy
