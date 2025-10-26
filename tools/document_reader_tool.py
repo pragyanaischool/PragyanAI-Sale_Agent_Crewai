@@ -2,10 +2,9 @@ import os
 from crewai_tools import BaseTool
 from pydantic import BaseModel, Field
 from typing import Type
-from langchain_core.documents import Document
 # Import readers
 from pypdf import PdfReader
-#from docx import Document
+from docx import Document
 
 class ReadDocumentInput(BaseModel):
     """Input model for DocumentReaderTool."""
