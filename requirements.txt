@@ -16,7 +16,7 @@ langchain
 langchain_groq
 langchain-core
 langchain-mongodb
-
+langchain-text-splitters
 #For text splitting
 langchain-community
 #--- Document Handling ---
