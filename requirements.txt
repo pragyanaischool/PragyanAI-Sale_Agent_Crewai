@@ -13,6 +13,7 @@ groq
 #For MongoDB Atlas Vector Search
 pymongo
 langchain
+langchain_groq
 langchain-core
 langchain-mongodb
 
