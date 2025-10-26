@@ -2,7 +2,8 @@ import os
 from pymongo import MongoClient
 #from langchain_community.document_loaders.base import Document
 from langchain_core.documents import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+#from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from langchain.tools.retriever import create_retriever_tool
