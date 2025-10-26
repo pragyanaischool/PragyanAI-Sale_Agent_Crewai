@@ -1,4 +1,4 @@
-import PyPDF2
+import pypdf  # Changed from PyPDF2
 import docx
 from typing import Type
 from pydantic import BaseModel, Field
@@ -27,7 +27,7 @@ class DocumentReaderTool(BaseTool):
             if file_path.endswith(".pdf"):
                 # Handle PDF files
                 with open(file_path, "rb") as f:
-                    reader = PyPDF2.PdfReader(f)
+                    reader = pypdf.PdfReader(f)  # Changed from PyPDF2.PdfReader
                     for page in reader.pages:
                         text += page.extract_text() or ""
                 if not text:
@@ -50,3 +50,4 @@ class DocumentReaderTool(BaseTool):
             return f"Error: File not found at path: {file_path}"
         except Exception as e:
             return f"Error reading file: {e}"
+
