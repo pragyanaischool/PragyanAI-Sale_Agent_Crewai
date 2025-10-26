@@ -3,8 +3,8 @@ import docx
 from typing import Type
 from pydantic import BaseModel, Field
 
-# Corrected import: BaseTool is now in 'crewai_tools'
-from crewai_tools import BaseTool
+# Corrected import: BaseTool is now imported directly to bypass __init__.py
+from crewai_tools.tools.base_tool import BaseTool
 
 # --- 1. Define Input Schema ---
 # This tells the agent *how* to use the tool.
