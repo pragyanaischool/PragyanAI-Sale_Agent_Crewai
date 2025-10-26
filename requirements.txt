@@ -28,3 +28,4 @@ python-docx
 #Use HuggingFace local embeddings
 langchain-huggingface
 sentence-transformers
+patronus
